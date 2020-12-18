@@ -1,0 +1,32 @@
+<view class="container">
+  <demo-block title="菜单信息">
+    <van-card
+      num="5"
+      price="2.00"
+      desc="浓缩咖啡"
+      title="这是世界上最苦的咖啡。管你吃不吃"
+      thumb="{{ imageURL2 }}"
+    />
+  </demo-block>
+
+  <demo-block title="菜单信息">
+    <van-card
+      num="2"
+      tag="折扣"
+      price="5.00"
+      origin-price="10.00"
+      desc="美式咖啡"
+      title="即将结束2020年的最佳咖啡 快来喝喝看"
+      thumb="{{ imageURL }}"
+    >
+    </van-card>
+  </demo-block>
+  <demo-block>
+  <van-submit-bar
+    price="{{ 2000 }}"
+    button-text="立即结算"
+    bind:submit="onClickButton"
+    safe-area-inset-bottom="{{ false }}"
+  />
+</demo-block>
+</view>
